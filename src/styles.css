@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+nav {
+    background: #DE6769;
+    height: 10px;
+}
+footer {
+    background: #DE6769;
+    height: 20px;
+}
+body {
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.custom-btn {
+    background-color: #AE5A94;
+    border-radius: 30px; /* Cambia este valor para ajustar cuánto quieres que se redondeen los bordes */
+    color: white; /* Cambia esto para el color que quieras para el texto del botón */
+    width: 250px;
+
+  }
+  .custom-btn2 {
+    background-color: #fff;
+    border-radius: 30px; /* Cambia este valor para ajustar cuánto quieres que se redondeen los bordes */
+    color: #AE5A94; /* Cambia esto para el color que quieras para el texto del botón */
+    width: 250px;
+    border: #AE5A94 2px solid;
+
+  }
+  .caja-footer {
+    margin-top: auto;
+}
+.botones {
+    height: 50vh;
+}
+.formulario-registro {
+    width: 350px;
+}
+.container-bg {
+    background: url(./assets/img/fondo.png) no-repeat;
+    background-position: bottom center;
+}
+.margin-login {
+    margin-top: 250px;
+}
+.texto-bienvenida {
+    width: 300px;
+    color: #3D1431;
+    font-size: 12px;
+    text-align: center;
+    margin: 25px 0px 40px 0px;
+}
+h1 {
+    color: #3D1431;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px; /* 50% of your logo width */
+    display: block;
+   
+  }
+  .logo {
+    width: 100px;
+  }
