@@ -8,6 +8,9 @@ import { RegistroComponent } from './registro/registro.component';
 import { LoginComponent } from './login/login.component';
 import { BienvenidoComponent } from './bienvenido/bienvenido.component';
 import { ListadoVentaComponent } from './listado-venta/listado-venta.component';
+import { ListadoVentaNormalComponent } from './listado-venta-normal/listado-venta-normal.component';
+import { ListadoVentaSubastaComponent } from './listado-venta-subasta/listado-venta-subasta.component';
+import { SubirOfertaComponent } from './subir-oferta/subir-oferta.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { ListadoVentaComponent } from './listado-venta/listado-venta.component';
     RegistroComponent,
     LoginComponent,
     BienvenidoComponent,
-    ListadoVentaComponent
+    ListadoVentaComponent,
+    ListadoVentaNormalComponent,
+    ListadoVentaSubastaComponent,
+    SubirOfertaComponent
   ],
   imports: [
     BrowserModule,

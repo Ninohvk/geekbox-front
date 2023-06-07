@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+/* @import '~@fortawesome/fontawesome-free/css/all.css'; */
 nav {
     background: #DE6769;
     height: 10px;
 }
 footer {
     background: #DE6769;
-    height: 20px;
+ 
+}
+.footer-alto{
+    height: 25px;
 }
 body {
     display: flex;
@@ -32,13 +36,13 @@ body {
     margin-top: auto;
 }
 .botones {
-    height: 50vh;
+    height: 38vh;
 }
 .formulario-registro {
-    width: 350px;
+    width: 300px;
 }
 .container-bg {
-    background: url(./assets/img/fondo.png) no-repeat;
+    background: url(assets/img/fondo.png) no-repeat;
     background-position: bottom center;
 }
 .margin-login {
@@ -64,3 +68,60 @@ h1 {
   .logo {
     width: 100px;
   }
+  .gb-precio {
+    font-size: 20px;
+  }
+  .card-title {
+    font-size: 13px;
+}
+.card-body {
+    padding: 10px;
+}
+.card-text {
+    font-size: 12px;
+}
+
+.title-link {
+    color: #3D1431;
+    font-size: 16px;
+  }
+
+  .title-link2 {
+    color: #3D1431;
+    font-size: 14px;
+  }
+  
+  .title-link2 .fa-chevron-right {
+    margin-left: 5px;
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .icon-container {
+    color: #FFBE55;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding: 0 10px 0px 10;
+}
+
+.icon-container i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.icon-container a {
+    color: #FFBE55;
+    text-decoration: none;
+}
+.flotante {
+    position: fixed; 
+    bottom: 0;
+    z-index: 999;
+}
+.mb-gbox {
+    margin-bottom: 100px;
+}
