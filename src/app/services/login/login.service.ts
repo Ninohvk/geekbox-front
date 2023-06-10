@@ -10,6 +10,6 @@ export class LoginService {
   constructor(private http: HttpClient) { }
 
   post = (mail: string, password: string) => {
-    return this.http.post(environment.backend, { mail, password }, { responseType: 'json' })
+    return this.http.post(environment.backend + "/login", { mail, password }, { responseType: 'json' })
   }
 }

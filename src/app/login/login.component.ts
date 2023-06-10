@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { LoginService } from './../services/login/login.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -10,14 +11,17 @@ export class LoginComponent implements OnInit {
   mail: string = "persona@mail.cl"
   password: string = "123"
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService,
+              private route: Router) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   login() {
     this.loginService.post(this.mail, this.password).subscribe({
-        next: (res)=> console.log(res)
+        next: (res) => {
+          if(res) this.route.navigate(["/listado-venta"])
+          else alert("error mail o contraseña incorrecta")
+        }
     })
   }
 }
