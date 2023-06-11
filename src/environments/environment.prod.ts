@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  backend: 'https://geekbox-back-production.up.railway.app/login'
+  backend: 'https://geekbox-back-production.up.railway.app'
 };
