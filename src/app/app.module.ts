@@ -15,6 +15,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { VentaSingleComponent } from './venta-single/venta-single.component';
 import { ExitoPublicacionComponent } from './exito-publicacion/exito-publicacion.component';
+import { ExitoCompraComponent } from './exito-compra/exito-compra.component';
+import { ExitoLoginComponent } from './exito-login/exito-login.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ExitoPublicacionComponent } from './exito-publicacion/exito-publicacion
     ListadoVentaSubastaComponent,
     SubirOfertaComponent,
     VentaSingleComponent,
-    ExitoPublicacionComponent
+    ExitoPublicacionComponent,
+    ExitoCompraComponent,
+    ExitoLoginComponent
   ],
   imports: [
     FormsModule,
