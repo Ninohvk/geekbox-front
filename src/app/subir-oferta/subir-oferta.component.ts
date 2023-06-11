@@ -16,7 +16,7 @@ export class SubirOfertaComponent implements OnInit {
     dprecioProdOfer: null,
     icantOfer: null,
     cdescProdOfer: null,
-    persona_IIdPer: null,
+    persona: null
   }
 
   constructor(private productoOfertaService: ProductoOfertaService,
@@ -33,7 +33,7 @@ export class SubirOfertaComponent implements OnInit {
         if(res) {
           nuevoId = res + 1
           this.oferta.iidProdOfer = nuevoId
-          this.oferta.persona_IIdPer = this.usuarioService.usuario["iidPer"]
+          this.oferta.persona = this.usuarioService.usuario
           this.productoOfertaService.post(this.oferta).subscribe({
             next: (res) => {
               if(res) this.route.navigate(["/exito-publicacion"])
