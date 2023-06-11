@@ -20,4 +20,8 @@ export class ProductoOfertaService {
   getById = (id: number) => {
     return this.http.get(environment.backend + "/producto-oferta/" + id, { responseType: 'json' })
   }
+
+  getLastId = () => {
+    return this.http.get(environment.backend + "/producto-oferta/last-id", { responseType: 'json' })
+  }
 }

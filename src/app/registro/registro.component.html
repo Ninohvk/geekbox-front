@@ -11,13 +11,13 @@
             <div class="text-center"><img src="assets/img/logo.png" alt="GeekBox"></div>
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <div class="formulario-registro mb-5 pt-5">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu nombre" [(model)]="persona.cnom">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu primer apellido" [(model)]="persona.cprimerApellido">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu segundo apellido" [(model)]="persona.csegundoApellido">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu email" [(model)]="persona.cemail">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu número de teléfono" [(model)]="persona.itelefono">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu Rut" [(model)]="persona.crut">
-                    <input type="text" class="form-control mb-4" placeholder="Ingresa tu contraseña" [(model)]="persona.cpass">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu nombre" [(ngModel)]="persona.cnom">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu primer apellido" [(ngModel)]="persona.cprimerApellido">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu segundo apellido" [(ngModel)]="persona.csegundoApellido">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu email" [(ngModel)]="persona.cemail">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu número de teléfono" [(ngModel)]="persona.itelefono">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu Rut" [(ngModel)]="persona.crut">
+                    <input type="text" class="form-control mb-4" placeholder="Ingresa tu contraseña" [(ngModel)]="persona.cpass">
                 </div>
 
                 <a class="btn custom-btn btn-lg mb-5" role="button" (click)="crearUsuario()">Aceptar</a>
