@@ -13,6 +13,8 @@ import { ListadoVentaSubastaComponent } from './listado-venta-subasta/listado-ve
 import { SubirOfertaComponent } from './subir-oferta/subir-oferta.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { VentaSingleComponent } from './venta-single/venta-single.component';
+import { ExitoPublicacionComponent } from './exito-publicacion/exito-publicacion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { HttpClientModule } from '@angular/common/http';
     ListadoVentaComponent,
     ListadoVentaNormalComponent,
     ListadoVentaSubastaComponent,
-    SubirOfertaComponent
+    SubirOfertaComponent,
+    VentaSingleComponent,
+    ExitoPublicacionComponent
   ],
   imports: [
     FormsModule,
