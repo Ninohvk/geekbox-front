@@ -8,6 +8,9 @@ import { ListadoVentaComponent } from './listado-venta/listado-venta.component';
 import { ListadoVentaNormalComponent } from './listado-venta-normal/listado-venta-normal.component';
 import { ListadoVentaSubastaComponent } from './listado-venta-subasta/listado-venta-subasta.component';
 import { SubirOfertaComponent } from './subir-oferta/subir-oferta.component';
+import { ExitoLoginComponent } from './exito-login/exito-login.component';
+import { ExitoCompraComponent } from './exito-compra/exito-compra.component';
+import { ExitoPublicacionComponent } from './exito-publicacion/exito-publicacion.component';
 
 const routes: Routes = [
   // { path: environment.routes.error, component: ErrorComponent },
@@ -20,6 +23,9 @@ const routes: Routes = [
   { path: 'listado-venta-normal', component: ListadoVentaNormalComponent },
   { path: 'listado-venta-subasta', component: ListadoVentaSubastaComponent },
   { path: 'subir-oferta', component: SubirOfertaComponent },
+  { path: 'exito-login', component: ExitoLoginComponent },
+  { path: 'exito-compra', component: ExitoCompraComponent },
+  { path: 'exito-publicacion', component: ExitoPublicacionComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   // { path: '*', component: FormularioComponent }
 ];

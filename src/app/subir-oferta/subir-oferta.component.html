@@ -14,10 +14,10 @@
             <div class="text-center"><img src="assets/img/logo.png" alt="GeekBox"></div>
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <div class="formulario-registro mb-5 pt-5">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa título de la oferta">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa el precio de la oferta">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa cantidad de productos">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa la descripción de la oferta">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa título de la oferta" [(model)]="oferta.cnomProdOfer">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa el precio de la oferta" [(model)]="oferta.dprecioProdOfer">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa cantidad de productos" [(model)]="oferta.icantOfer">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa la descripción de la oferta" [(model)]="oferta.cdescProdOfer">
                 </div>
 
                 <a class="btn custom-btn btn-lg mb-5" role="button" href="#" routerLink="/bienvenida">Aceptar</a>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { PersonaService } from '../services/persona/persona.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +9,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroComponent implements OnInit {
 
-  constructor() { }
+  persona = {
+    cnom: null,
+    cprimerApellido: null,
+    csegundoApellido: null,
+    cemail: null,
+    itelefono: null,
+    crut: null,
+    cpass: null,
+  }
+
+  constructor(private personaService: PersonaService,
+    private route: Router) { }
 
   ngOnInit() {
+  }
+
+  crearUsuario() {
+    this.personaService.post(this.persona).subscribe({
+      next: (res) => {
+        if(res) this.route.navigate(["/bienvenida"])
+        else alert("error al crear usuario")
+      }
+    })
   }
 
 }

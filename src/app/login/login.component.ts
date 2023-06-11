@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.loginService.post(this.mail, this.password).subscribe({
         next: (res) => {
-          if(res) this.route.navigate(["/listado-venta"])
+          if(res) this.route.navigate(["/exito-login"])
           else alert("error mail o contraseña incorrecta")
         }
     })

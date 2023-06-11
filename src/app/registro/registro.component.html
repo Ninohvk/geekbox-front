@@ -11,16 +11,16 @@
             <div class="text-center"><img src="assets/img/logo.png" alt="GeekBox"></div>
             <div class="d-flex flex-column justify-content-center align-items-center">
                 <div class="formulario-registro mb-5 pt-5">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu nombre">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu primer apellido">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu segundo apellido">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu email">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu número de teléfono">
-                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu Rut">
-                    <input type="text" class="form-control mb-4" placeholder="Ingresa tu contraseña">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu nombre" [(model)]="persona.cnom">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu primer apellido" [(model)]="persona.cprimerApellido">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu segundo apellido" [(model)]="persona.csegundoApellido">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu email" [(model)]="persona.cemail">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu número de teléfono" [(model)]="persona.itelefono">
+                    <input type="text" class="form-control mb-3" placeholder="Ingresa tu Rut" [(model)]="persona.crut">
+                    <input type="text" class="form-control mb-4" placeholder="Ingresa tu contraseña" [(model)]="persona.cpass">
                 </div>
 
-                <a class="btn custom-btn btn-lg mb-5" role="button" href="#" routerLink="/bienvenida">Aceptar</a>
+                <a class="btn custom-btn btn-lg mb-5" role="button" (click)="crearUsuario()">Aceptar</a>
               </div>
             
             
